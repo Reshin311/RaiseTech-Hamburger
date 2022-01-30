@@ -1,9 +1,25 @@
 
-
-
-
 .header {
     padding-top: 10px;
     border-bottom: 1px solid #ddd;
     background-color: purple;
 }
+
+
+
+
+
+@media (max-width: 375px) {
+    .header {
+        width: auto;
+        height: 217px;
+        background-color:#fff7ef;
+        color: #707070;
+        display: block;
+    }
+
+
+}
+
+
+

@@ -1,68 +1,23 @@
+@use "foundation/_base";
 @use "layout/_header";
 @use "layout/_main";
 
-html {
-  font-size: 10px;
-}
+@use "object/component/button";
+@use "object/component/title";
+@use "object/component/text";
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
+@use "object/project/article.scss";
+@use "object/project/gallery";
+@use "object/project/p-footer";
+@use "object/project/p-header";
+@use "object/project/p-main";
 
 
-@media (max-width: 375px) {
-  .header {
-    width: auto;
-    height: 217px;
-    background-color:#fff7ef;
-    color: #707070;
-    display: block;
-  }
-  .p-header__menu-button {
-    display: block;
-    color: #707070;
-    margin-right: 20px;
-    margin-left: auto;
-    font-weight: bold;
-    font-size: 2rem;
-    font-family: Roboto;
-    
-  }
-  .p-header__title {
-    font-family: Roboto;
-    font-size: 4rem;
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 40px;
-  }
-  .p-header__form {
-    display:table;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 40px;
-  }
-  .p-header__form__search {
-    border-style: solid;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border-color: #707070;
-    height: 46px;
-    width: 230px;
-  }
-  .p-header__form__button {
-    border-style: solid;
-    border-color: #707070;
-    background-color: #efeae5;
-    border-radius: 10px;
-    margin-left: 10px;
-    font-size: 1.6rem;
-    height: 46px;
-    width: 78px;
-    font-family: "M PLUS 1p";
-  }
-}
+
+  
+  
+  
+
 
 // =======================================
 
