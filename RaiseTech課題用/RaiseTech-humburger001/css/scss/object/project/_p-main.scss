@@ -1,0 +1,21 @@
+.l-top-imgs {
+    display: flex;
+}
+@media (max-width: 375px) {
+    .l-top-imgs__inner {
+        display: grid;
+        width: 100vh;
+        height: 285px;
+        object-fit: scale-down;
+        background-size: cover;
+        align-items: center;
+    }
+    .p-top-imgs__title {
+        color: white;
+        margin-left: 8%;
+        margin-right: auto;
+        justify-content: center;
+        font-size: 3.6rem;
+        font-family: "M PLUS 1p";
+    }
+}
