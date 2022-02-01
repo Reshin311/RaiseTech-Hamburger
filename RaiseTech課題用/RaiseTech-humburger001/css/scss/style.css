@@ -7,14 +7,14 @@ a {
   color: #fff;
 }
 
-.header {
+.l-header {
   padding-top: 10px;
   border-bottom: 1px solid #ddd;
   background-color: purple;
 }
 
 @media (max-width: 375px) {
-  .header {
+  .l-header {
     width: auto;
     height: 217px;
     background-color: #fff7ef;
@@ -50,7 +50,7 @@ a {
   text-decoration: none;
 }
 
-.p-header__menu-button {
+.c-button--menu {
   display: block;
   color: #707070;
   margin-right: 20px;
@@ -60,14 +60,35 @@ a {
   font-family: Roboto;
 }
 
-.p-header__form {
+.p-header__form__button {
+  border-style: solid;
+  border-color: #707070;
+  background-color: #efeae5;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 1.6rem;
+  height: 46px;
+  width: 78px;
+  font-family: "M PLUS 1p";
+}
+
+.p-header__title {
+  font-family: Roboto;
+  font-size: 4rem;
   display: table;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
 }
 
-.p-header__form__search {
+.c-form--search {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.c-button--search {
   border-style: solid;
   background-color: #ffffff;
   border-radius: 10px;
