@@ -1,9 +1,27 @@
-.header {
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.l-header {
   padding-top: 10px;
   border-bottom: 1px solid #ddd;
   background-color: purple;
 }
 
+@media (max-width: 375px) {
+  .l-header {
+    width: auto;
+    height: 217px;
+    background-color: #fff7ef;
+    color: #707070;
+    display: block;
+  }
+}
 .l-top-imgs__inner {
   background-image: url(/mainvisual-img/top-img@2x.jpg);
   -o-object-fit: contain;
@@ -32,74 +50,54 @@ a {
   text-decoration: none;
 }
 
-html {
-  font-size: 10px;
+.c-button--menu {
+  display: block;
+  color: #707070;
+  margin-right: 20px;
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: Roboto;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
+.c-button--search {
+  border-style: solid;
+  border-color: #707070;
+  background-color: #efeae5;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 1.6rem;
+  height: 46px;
+  width: 78px;
+  font-family: "M PLUS 1p";
 }
 
-@media (max-width: 375px) {
-  .header {
-    width: auto;
-    height: 217px;
-    background-color: #fff7ef;
-    color: #707070;
-    display: block;
-  }
-
-  .p-header__menu-button {
-    display: block;
-    color: #707070;
-    margin-right: 20px;
-    margin-left: auto;
-    font-weight: bold;
-    font-size: 2rem;
-    font-family: Roboto;
-  }
-
-  .p-header__title {
-    font-family: Roboto;
-    font-size: 4rem;
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 40px;
-  }
-
-  .p-header__form {
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 40px;
-  }
-
-  .p-header__form__search {
-    border-style: solid;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border-color: #707070;
-    height: 46px;
-    width: 230px;
-  }
-
-  .p-header__form__button {
-    border-style: solid;
-    border-color: #707070;
-    background-color: #efeae5;
-    border-radius: 10px;
-    margin-left: 10px;
-    font-size: 1.6rem;
-    height: 46px;
-    width: 78px;
-    font-family: "M PLUS 1p";
-  }
+.c-title--header {
+  font-family: Roboto;
+  font-size: 4rem;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
 }
+
+.c-form--search {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.c-button--search {
+  border-style: solid;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-color: #707070;
+  height: 46px;
+  width: 230px;
+}
+
 .l-top-imgs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -111,18 +109,14 @@ a {
     -o-object-fit: scale-down;
        object-fit: scale-down;
     background-size: cover;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 
   .p-top-imgs__title {
     color: white;
     margin-left: 8%;
     margin-right: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     font-size: 3.6rem;
     font-family: "M PLUS 1p";
   }
@@ -134,16 +128,10 @@ a {
 
   .l-take-out__inner {
     height: 642px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 20px;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+    align-content: space-around;
     font-family: "M PLUS 1p";
     position: relative;
     z-index: 1;
@@ -202,16 +190,10 @@ a {
 
   .p-eat-in__inner {
     height: 642px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 20px;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+    align-content: space-around;
     font-family: "M PLUS 1p";
     position: relative;
     z-index: 1;
@@ -283,8 +265,6 @@ a {
   }
 
   .p-access__map-shadow {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: inherit;
     width: auto;
@@ -350,12 +330,9 @@ a {
   top: 40px;
   right: 0px;
   width: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100%;
   overflow: hidden;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
